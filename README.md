@@ -6,7 +6,7 @@ This template contains an example [Blazor WebAssembly](https://docs.microsoft.co
 https://witty-wave-0e42c2210.azurestaticapps.net/
 
 ## Demonstration
-![screenshot](https://github.com/GovindaJR/Tutorial3/blob/master/screenshot.PNG) 
+![screenshot](https://github.com/GovindaJR/BlazorApp/blob/master/screenshot.PNG) 
 
 ## Author
 Govinda Ramrattan
