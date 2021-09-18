@@ -1,6 +1,6 @@
 # Blazor Starter Application
 
-This project contains an example [Blazor WebAssembly](https://docs.microsoft.com/aspnet/core/blazor/?view=aspnetcore-3.1#blazor-webassembly) client application, a C# [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) and a C# class library with shared code. Created for COP 3003.
+This project contains an example [Blazor WebAssembly](https://docs.microsoft.com/aspnet/core/blazor/?view=aspnetcore-3.1#blazor-webassembly) client application, a C# [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) and a C# class library with shared code. This project was created for COP 3003 (Programming II).
 
 ## Link
 https://witty-wave-0e42c2210.azurestaticapps.net/
