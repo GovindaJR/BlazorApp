@@ -2,7 +2,7 @@
 
 <h1>IPO</h1>
 
-<p>Input prompt </p>
+<p>Enter a number to be squared: </p>
 
 <input @bind="InputString "/>
 
@@ -24,7 +24,7 @@
 
         double num = double.Parse(InputString);
 
-        num = num * 2; 
+        num = num * num; 
 
         OutputString = num.ToString();
 
