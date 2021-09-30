@@ -1,0 +1,39 @@
+@page "/todo"
+
+@* Header tag that represents title *@
+<h1>Todo (@todos.Count(todo => !todo.IsDone))</h1>
+
+@* For every item in todolist, place its title on screen with a checkbox next to it *@
+<ul>
+    @foreach (var todo in todos)
+    {
+        <li>
+            <input type="checkbox" @bind="todo.IsDone" />
+            <input @bind="todo.Title" />
+        </li>
+    }
+</ul>
+
+@* creates input form for user to add task and a button to submit *@
+<input placeholder="Something todo" @bind="newTodo" />
+<button @onclick="AddTodo">Add todo</button>
+
+@code {
+
+    @* creates list to store todo activities  *@
+    private List<TodoItem> todos = new();
+
+    @* variable to hold todo activity *@
+    private string newTodo;
+
+    @* Adds todo list activities entered by user into the todos list *@
+    private void AddTodo()
+    {
+        // Runs code as long as there is text in the input form 
+        if (!string.IsNullOrWhiteSpace(newTodo))
+        {
+            todos.Add(new TodoItem { Title = newTodo });
+            newTodo = string.Empty;
+        }
+    }
+}
